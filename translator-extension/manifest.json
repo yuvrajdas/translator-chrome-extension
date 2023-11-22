@@ -1,0 +1,21 @@
+{
+    "name":"Live Dictionary By Yuvraj",
+    "version":"1.0",
+    "manifest_version":3,
+    "description":"Get the word meaning by selection on text at any point of time do not need to go anywhere",
+    "icons":{
+        "16":"images/a.png",
+        "32":"images/b.png",
+        "48":"images/c.png",
+        "128":"images/d.png"
+    },
+    "content_scripts":[
+        {
+            "js":["scripts/popup.js","scripts/content.js"],
+            "css":["scripts/style.css"],
+            "matches":[
+                "*://*/*"
+            ]
+        }
+    ]
+}
